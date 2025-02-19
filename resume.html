@@ -6,8 +6,8 @@
 body {
     color: #232323;
     background: #FFFFFF;
-    font: 1.0em "Fira Sans";
-    line-height: 1.25;
+    font: 1.0em "Roboto";
+    line-height: 1.5;
     margin: 40px 0;
 }
 a {
@@ -29,54 +29,56 @@ a {
 h1 {
     text-transform: none;
     text-align: center;
-    font: 1.0em "Fira Sans", serif;
+    font: 1.0em "Roboto", serif;
     font-size: 200%;
     font-weight: 800;
-    margin: 0;
+    margin: 1.0em;
     padding: 0;
 }
 h2 {
     text-align: center;
     font-size: 100%;
     font-weight: 800;
-    font: 1.0em "Inter", serif;
-    margin: 0;
-    margin: 0;
+    font: 1.0em "Roboto", serif;
+    margin: 1.0em;
     padding: 0;
 }
 h3 {
     border-bottom: 1px solid #D3D3D3;
     text-transform: uppercase;
-    font: 1.0em "Inter";
+    font: 1.0em "Roboto";
     font-size: 125%;
     font-weight: 800;
     margin: 0;
-    margin: 1em 0 0 0;
+    margin: 1em 1em 0 0;
     padding: 0;
 }
 h4 {
     font-size: 100%;
-    margin: 0.8em 0 0.3em 0;
+    margin: 1em 0 0.3em 0;
     padding: 0;
     display: flex;
     justify-content: space-between;
 }
 p {
-    margin: 0 0 0.5em 0;
+    margin: 1.0em 0.0 0.5em 0;
     padding: 0;
     }
 ul {
     padding: 0;
-    margin: 0 1.5em;
+    margin: 0em 1.5em;
     }
 /* ul immediately after h1 = contact list */
 h2 + ul {
-    font: 0.9em "Inter", sans-serif;
+    font: 0.9em "Roboto", sans-serif;
     font-weight: 700;
     text-align: center;
-    margin: 0;
+    margin: 1.0em;
     padding: 0;
     }
+h3 + ul {
+    margin: 1.0em 0em;
+}
 h2 + ul > li {
     display: inline;
     text-align: center;
@@ -91,7 +93,7 @@ h2 + ul > li:last-child:after {
 }
 /* p immediately after contact list = summary */
 h2 + ul + p {
-    margin: 1em 0;
+    margin: 1em;
     text-align: center;
 }
 @media print {
@@ -131,7 +133,7 @@ h2 + ul + p {
     }
     #resume {
         margin: 0;
-        padding: 1em;
+        padding: 0.5em;
         border: 0px;
         background: none;
         box-shadow: none;
@@ -172,23 +174,13 @@ line. It is intended to be used for contact details -->
 is intended to be used for a short summary. -->
 
 <h3>Summary</h3>
-<h4>Computational scientist with over 5 years combined experience in industry and academia:</h4>
+<h4>Computational scientist with over 10 years combined experience in industry and academia:</h4>
 <ul>
-<li>
-<p>Extensive background in the implementation of computational algorithms within existing finite element method codes for mathematical modeling coupled to CFD; modifying computational physics methods with innovative extensions using object oriented and distributed-memory parallel programming</p>
-</li>
-<li>
-<p>Experience with developing, building, benchmarking and running codes on high performance computing (HPC) clusters</p>
-</li>
-<li>
-<p>On and off-site technical customer support for HPC applications, modeling &amp; simulation projects</p>
-</li>
-<li>
-<p>Excellent teamwork through interpersonal communication and interdisciplinary collaboration with experimentalists, mathematicians and engineers</p>
-</li>
-<li>
-<p>Flexibility in completing self-conducted review to learn new tools for a project, whether it be a programming language, numerical method or modeling program</p>
-</li>
+<li>Extensive background in the implementation of computational algorithms within existing finite element method codes for mathematical modeling coupled to CFD; modifying computational physics methods with innovative extensions using object oriented and distributed-memory parallel programming</li>
+<li>Experience with developing, building, benchmarking and running codes on high performance computing (HPC) clusters</li>
+<li>On and off-site technical customer support for HPC applications, modeling &amp; simulation projects</li>
+<li>Excellent teamwork through interpersonal communication and interdisciplinary collaboration with experimentalists, mathematicians and engineers</li>
+<li>Flexibility in completing self-conducted review to learn new tools for a project, whether it be a programming language, numerical method or modeling program</li>
 </ul>
 <h3>Education</h3>
 <h4><span>Colorado School of Mines, PhD in Computational &amp; Applied Mathematics</span> <span>December 2019</span></h4>
@@ -197,6 +189,10 @@ is intended to be used for a short summary. -->
 <li>Dissertation: <em>Computational modeling of extravascular platelet aggregation under flow</em></li>
 <li>MATH440 - Parallel Scientific Computing</li>
 </ul>
+<h4><span>Ph.D., Applied Mathematics (Continued at Mines) August 2013 - July 2016</span> <span> August 2013 - July 2016 </span></h4>
+<p>University of California, Merced, Left to Colorado School of Mines
+Research: Computational Model of Extravascular Platelet Aggregation
+Advisor: Dr. Karin Leiderman</p>
 <h4><span>California State University, Bakersfield, BS in Mathematics - Applied </span> <span>June 2013</span></h4>
 <ul>
 <li>3.82 GPA, Magna Cum Laude</li>
@@ -205,13 +201,14 @@ is intended to be used for a short summary. -->
 <h3>Work Experience</h3>
 <!-- You have to wrap the "left" and "right" half of these headings in spans by
 hand -->
-<h4><span>Computational Scientist<br> Colorado School of Mines, Information &amp; Technology Solutions (ITS) </span> <span> <br> August 2020 &ndash; Present</span></h4>
+<h4><span>Computational Scientist<br> Colorado School of Mines, Information Technology (IT) </span> <span> <br> August 2020 &ndash; Present</span></h4>
 <ul>
-<li>Member of the Cyber Infrastructure &amp; Advanced Research Computing (CIARC) group under ITS where main duties include:<ul>
+<li>Member of the Research Computing (RC) group under IT where main duties include:<ul>
 <li>Supporting HPC users on technical and non-technical issues with research computing</li>
 <li>Building, porting and scaling applications &amp; software libraries on Mines&rsquo; HPC cluster systems</li>
-<li>Lead on developing and providing new technical information &amp; user guides for Mines HPC users via CIARC Mines website </li>
-<li>Participating in internal and external outreach for research computing awareness for campus-wide support</li>
+<li>Lead on developing and providing new technical information &amp; user guides for Mines HPC users via RC Mines website </li>
+<li>Providing per-semester training workshops on Intro to HPC &amp; Intro to MPI using Python</li>
+<li>Fostering community through &ldquo;Tech Talk Tuesdays&rdquo; monthly meetings</li>
 </ul>
 </li>
 </ul>
@@ -251,11 +248,199 @@ Chico, CA</p>
 <li>Used a combination of perturbation methods, asymptotic analysis and numerical simulation to study rimming flow inside a cylinder</li>
 <li>Collaborated with a teacher and other undergraduate math students with research, writing and presentations</li>
 </ul>
+<h3>Awards</h3>
+<ul>
+<li>GRADS Poster Award Spring 2017<ul>
+<li>Colorado School of Mines</li>
+<li>Poster Title: <em>Toward A Mathematical Model of Hemostasis</em></li>
+<li>Awarded 1st place in Session I of the College of Engineering &amp; Computational Science Division</li>
+</ul>
+</li>
+<li>Research Fellowship Summer 2014<ul>
+<li>University of California Merced, School of Natural Sciences</li>
+</ul>
+</li>
+<li>Mathematics Chair Award 2013<ul>
+<li>California State University, Bakersfield, Department of Mathematics</li>
+</ul>
+</li>
+<li>Jazz Festival Scholarship 2012<ul>
+<li>California State University, Bakersfield, Department of Mathematics</li>
+</ul>
+</li>
+</ul>
+<h3>Publications</h3>
+<p>Link, K.G., Sorrells, M.G., <strong>Danes, N.A.</strong>, Neeves, K.B., Leiderman, K. and Fogelson, A.L., 2020. <em>A mathematical model of platelet aggregation in an extravascular injury under flow.</em> Multiscale modeling &amp; simulation, 18(4), pp.1489-1524.</p>
+<p><strong>Danes, N.A.</strong> and Leiderman, K., 2019. <em>A density‐dependent FEM‐FCT algorithm with application to modeling platelet aggregation.</em> International journal for numerical methods in biomedical engineering, 35(9), p.e3212.</p>
+<p>Sitaraman, H., <strong>Danes, N.</strong>, Lischeske, J.J., Stickel, J.J. and Sprague, M.A., 2019. <em>Coupled CFD and chemical-kinetics simulations of cellulosic-biomass enzymatic hydrolysis: Mathematical-model development and validation.</em> Chemical Engineering Science, 206, pp.348-360.</p>
+<p>Schoeman, R.M., Rana, K., <strong>Danes, N.</strong>, Lehmann, M., Di Paola, J.A., Fogelson, A.L., Leiderman, K. and Neeves, K.B., 2017. <em>A microfluidic model of hemostasis sensitive to platelet function and coagulation.</em> Cellular and molecular bioengineering, 10, pp.3-15.</p>
+<p>Fomin, S., Shankar, R., <strong>Danes, N.</strong>, Yasuda, A. and Chugunov, V., 2014. Rimming flow of a weakly elastic fluid. Theoretical and Computational Fluid Dynamics, 28, pp.485-498.</p>
+<h3>Mentoring</h3>
+<ul>
+<li>Undergraduate Research Mentor, Topic: Mathematical modeling of blood coagulation Fall 2018</li>
+<li>Mentor for Community College Research Workshop (Colorado School of Mines) June 2018</li>
+</ul>
+<h3>Conferences &amp; Presentations</h3>
+<ul>
+<li>SIAM Life Sciences, Minneapolis, MN August 2018<ul>
+<li>Presentation: A Mathematical Model of Extravascular Platelet Aggregation</li>
+<li>Siession: Multiscale Modeling of Biomechanical and Biochemical Systems - Part II of II</li>
+</ul>
+</li>
+<li>WCCMXIII &amp; PANACM II, New York City, NY July 2018<ul>
+<li>Presentation: A Mathematical Model of Extravascular Platelet Aggregation</li>
+<li>Session: Computational Multiphysics Modeling Of Cardiovascular Systems</li>
+</ul>
+</li>
+<li>Colorado School of Mines GRADS, Golden, CO April 2018<ul>
+<li>Presentation: A computational model of platelet aggregation under flow</li>
+</ul>
+</li>
+<li>70th Annual Meeting of APS-DFD, Denver, CO November 2017<ul>
+<li>Presentation: A coupled CFD and two-phase substrate kinetic model for enzymatic hydrolysis of
+lignocellulose</li>
+<li>Session: Reacting Flows: General I</li>
+<li>Co-Author(s): Drs. Jonathan Stickel, Michael A. Sprague, Hariswaran Sitaraman</li>
+<li>Other: Student Volunteer</li>
+</ul>
+</li>
+<li>SIAM Central States, Colorado State University, Fort Collins, CO September-October 2017<ul>
+<li>Presentation: Toward a Mathematical Model of Hemostasis</li>
+<li>Session: Mathematically-based Insights into Health and Disease</li>
+</ul>
+</li>
+<li>RMFM Research Symposium, CU Boulder, Boulder, CO August 2017<ul>
+<li>Presentation: Toward a Mathematical Model of Hemostasis</li>
+<li>Session: Biology, Surfaces and Droplets</li>
+</ul>
+</li>
+<li>Math Bio Alumni Conference, University of Utah, Salt Lake City, UT July 2017<ul>
+<li>Poster: Toward A Mathematical Model of Hemostasis</li>
+</ul>
+</li>
+<li>SIAM Dynamical Systems, Snowbird, UT May 2017</li>
+<li>Presentation: A Computational Model of Hemostasis<ul>
+<li>Session: Mathematical Model of Physiology and Medicine - Part II</li>
+</ul>
+</li>
+<li>Colorado School of Mines GRADS, Golden, CO April 2017<ul>
+<li>Poster: Toward A Mathematical Model of Hemostasis</li>
+</ul>
+</li>
+<li>SIAM Computational Science &amp; Engineering, Atlanta, GA Feburary-March 2017<ul>
+<li>Poster: Toward A Mathematical Model of Hemostasis</li>
+</ul>
+</li>
+<li>SIAM Life Sciences, Boston, MA July 2016<ul>
+<li>Co-organizer of Minisymposium: Mathematical Models of Coagulation</li>
+<li>Presentation: Pressure Boundary Conditions in a Computational Bleeding Chip Model</li>
+</ul>
+</li>
+<li>Computational Biofluids in Physiology, University of Utah, Salt Lake City, UT May 2015<ul>
+<li>Poster: A Mathematical Model of Factor Xa Regulation by Rivaroxaban</li>
+</ul>
+</li>
+</ul>
+<h3>Teaching Experience</h3>
+<ul>
+<li>
+<p>Teaching Assistant - January 2016 - May 2016</p>
+<ul>
+<li>Instructor: Karin Leiderman</li>
+<li>University of California, Merced, Department of Applied Mathematics<ul>
+<li>Ran the discussion section for Numerical Analysis I. Met with students once a week to discuss
+practical implementations of programs using Matlab, as well as graded homeworks and exams.</li>
+<li>Held office hours weekly to assist students with homework and general lecture questions.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Teaching Assistant - August 2014 - December 2014</p>
+<ul>
+<li>Instructor: Francois Blanchette</li>
+<li>University of California, Merced, Department of Applied Mathematics<ul>
+<li>Ran the discussion section for Numerical Analysis I. Met with students once a week to discuss
+practical implementations of programs using Matlab, as well as graded homeworks and exams.</li>
+<li>Held office hours weekly to assist students with homework and general lecture questions.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Teaching Assistant - January 2014 - May 2014</p>
+<ul>
+<li>Instructor: Dimitrios Mitsotakis</li>
+<li>University of California, Merced, Department of Applied Mathematics
+        - Ran the discussion section for Numerical Analysis I. Met with students once a week to discuss
+practical implementations of programs using Matlab, as well as graded homeworks and exams.
+        - Held office hours weekly to assist students with homework and general lecture questions.</li>
+</ul>
+</li>
+<li>
+<p>Teaching Assistant - August 2013 - December 2013</p>
+<ul>
+<li>Instructor: Alexander Yatskar</li>
+<li>University of California, Merced, Department of Applied Mathematics<ul>
+<li>Ran the discussion section for Calculus II for the Physical Sciences and Engineering. Assisted
+students with weekly worksheet/lab sessions, answered questions in class, held weekly office hours,
+graded and proctored exams.
+T</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Teaching Assistant June 2013 - August 2013</p>
+<ul>
+<li>Instructor: Haik Stephanian</li>
+<li>University of California, Merced, Department of Applied Mathematics<ul>
+<li>Ran the discussion section for Vector Calculus. Assisted students with bi-weekly worksheet/lab
+sessions, answered questions in class, held weekly office hours, and graded homework and exams.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Teaching Assistant April 2013 - June 2013</p>
+<ul>
+<li>Instructor: Rebecca Larson</li>
+<li>California State University Bakersfield, Department of Mathematics<ul>
+<li>Assisted professor in grading homework, quizzes, and labs for her Calculus III for Engineering
+course.</li>
+<li>Led the lab section of the course to serve as a in-class tutor for students.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Teaching Assistant September 2012 - March 2013</p>
+<ul>
+<li>Instructor: Yangsuk Ko</li>
+<li>California State University Bakersfield, Department of Mathematics<ul>
+<li>Assisted professor in grading homework, quizzes, and labs for his Calculus I and Calculus II for
+Engineering courses.</li>
+<li>Led the lab section of the course to serve as a in-class tutor for students.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Mathematics Tutor September 2011 - June 2013</p>
+<ul>
+<li>California State University, Bakersfield, Department of Mathematics<ul>
+<li>Tutored students taking undergraduate courses in Finite Math, Pre-Calculus, Trigonometry, Statis-
+tics, and Single/Multivariable Calculus through an on-campus mathematics tutoring center</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 <h3>Skills</h3>
 <h4>Computer Skills</h4>
 <table style="width:100%">
   <tr>
-    <th width="25%">Novice</th>
+    <th width="25%">Proficient</th>
     <td>HTML, CSS, Markdown, Git, C/C++, Bash</td>
   </tr>
   <tr>
@@ -276,6 +461,13 @@ Chico, CA</p>
 <ul>
 <li>Formal presentations to groups and/or conferences, technical writing</li>
 <li>Interdisciplinary communication for research projects, papers, and presentations</li>
+</ul>
+<h3>Professional Memberships</h3>
+<ul>
+<li>Association for Computing Machinery (ACM)<ul>
+<li>2020 to Present</li>
+</ul>
+</li>
 </ul></div>
 </body>
 </html>
